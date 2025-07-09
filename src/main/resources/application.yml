@@ -1,16 +1,28 @@
+server:
+  port: 8080
+  servlet:
+      context-path: /cache
 spring:
   application:
     name: app-cache
-  servlet:
-    context-path: /app-cache
   cache:
-    cache-names: cache1, cache2, cache3
+    infinispan:
+      cache-names: cache1, cache2, cache3
   datasource:
     url: jdbc:h2:mem:ciudadesdb
-    driverClassName: org.h2.Driver
     username: sa
-    password:
+    password: 123
+    driver-class-name: org.h2.Driver
     jpa:
       hibernate:
         ddl-auto: update
       show-sql: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+  h2:
+    console:
+      enabled: true
+      path: /h2-console

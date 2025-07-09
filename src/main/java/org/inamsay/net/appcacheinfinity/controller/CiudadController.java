@@ -22,5 +22,10 @@ public class CiudadController {
   public List<Ciudad> listarCiudades() {
     return ciudadService.obtenerCiudades();
   }
+  @GetMapping("/limpiar-cache")
+  public String limpiarCache() {
+    ciudadService.limpiarCache();
+    return "Cache 'ciudadesCache' limpiado.";
+  }
 
 }

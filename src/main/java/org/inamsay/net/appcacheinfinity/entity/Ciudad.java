@@ -1,9 +1,9 @@
 package org.inamsay.net.appcacheinfinity.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
 
+@Table(name = "ciudades")
+@Entity
 public class Ciudad {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
