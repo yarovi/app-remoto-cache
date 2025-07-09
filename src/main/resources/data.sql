@@ -1,0 +1,10 @@
+INSERT INTO ciudad (nombre) VALUES ('Lima');
+INSERT INTO ciudad (nombre) VALUES ('Arequipa');
+INSERT INTO ciudad (nombre) VALUES ('Cusco');
+INSERT INTO ciudad (nombre) VALUES ('Trujillo');
+INSERT INTO ciudad (nombre) VALUES ('Chiclayo');
+INSERT INTO ciudad (nombre) VALUES ('Piura');
+INSERT INTO ciudad (nombre) VALUES ('Tacna');
+INSERT INTO ciudad (nombre) VALUES ('Huancayo');
+INSERT INTO ciudad (nombre) VALUES ('Iquitos');
+INSERT INTO ciudad (nombre) VALUES ('Puno');
