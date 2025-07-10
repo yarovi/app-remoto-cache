@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <infinispan xmlns="urn:infinispan:config:14.0">
     <cache-container name="default">
-        <local-cache name="ciudadesCache"/>
+<!--        <local-cache name="ciudad"/>-->
     </cache-container>
 </infinispan>
 <!--this cache representa el nombre real del cluster a usar-->
