@@ -29,6 +29,8 @@ public class CiudadService {
   @Cacheable("ciudadesCache")
   public List<Ciudad> obtenerCiudades() {
     System.out.println("Consultando a la base de datos...");
+    System.out.println("Datos de cache: " + cacheManager.getCacheNames());
+    System.out.println("Datos de cache: " + cacheManager.getClass());
     return ciudadRepository.findAll();
   }
   public void limpiarCache() {
